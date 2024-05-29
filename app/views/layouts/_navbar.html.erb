@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default d-flex navbar-custom m-0 " style="width: 100%;">
+      <%# <div class="container row mb-3 bg-secondary"> %>
+        <div class=navbar-header>
+          <%# <button type="button" class="navbar-toggle collapsed"
+          data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> %>
+          <a class="navbar-brand" href="#">SimpleBlog</a>
+      
+          <div id="navbar bg-primary">
+            <ul class="nav navbar-nav d-flex flex-row align-items-center">
+              <li><%= link_to "Home", home_path %></li>
+          
+          
+              <li><%= link_to "Create Post", new_post_path %></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
