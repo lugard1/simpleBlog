@@ -22,18 +22,18 @@
 }
 
 .footer {
-  background-color: azure; /* Light background color */
-  padding: 2rem 0; /* Padding */
-  text-align: center; /* Centered text */
+  background-color: azure;
+  padding: 2rem 0;
+  text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
 .footer .container {
-  max-width: 960px; /* Max width of the content */
+  max-width: 960px;
 }
 
 .footer .text-muted {
-  color: #6c757d; /* Muted text color */
+  color: #6c757d;
 }
