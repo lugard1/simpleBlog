@@ -1,13 +1,15 @@
 <h3>Comments</h3>
 <% @post.comments.each do |comment| %>
   <div class="well">
-    <p><strong><%= comment.username %></strong>: <%= comment.body %></p>
-    <div class="button">
-    <%= link_to 'Edit', edit_post_comment_path(comment.post, comment), class: 'btn btn-primary btn-sm px-3' %>
-    <%= button_to "[X]", post_comment_path(comment.post, comment),
+    <div class="comment-align">
+      <p><strong><%= comment.username %></strong>: <%= comment.body %></p>
+      <div class="button">
+        <%= link_to 'Edit', edit_post_comment_path(comment.post, comment), class: 'btn btn-primary btn-sm px-3' %>
+        <%= button_to "[X]", post_comment_path(comment.post, comment),
                          method: :delete,
                          data: { confirm: "Are you sure?" },
                          class: "btn btn-danger btn-sm px-3" %>
+      </div>
     </div>
   </div>
 <% end %>

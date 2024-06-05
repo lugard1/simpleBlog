@@ -9,6 +9,7 @@ import Rails from '@rails/ujs';
 
 import Turbolinks from "turbolinks";
 import { Turbo } from "@hotwired/turbo-rails";
+import "./mobile_menu";
 
 Rails.start();
 Turbolinks.start();

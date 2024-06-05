@@ -2,12 +2,12 @@
 <%= form_for([@post, @post.comments.build]) do |f| %>
   <p>
     <%= f.label :username %><br>
-    <%= f.text_field :username, class: 'form-control' %>
+    <%= f.text_field :username, class: 'form-control', placeholder: 'Enter your name' %>
   </p>
 
   <p>
     <%= f.label :body %><br>
-    <%= f.text_area :body, class: 'form-control' %>
+    <%= f.text_area :body, class: 'form-control', placeholder: 'Post your reply' %>
   </p>
 
   <p>

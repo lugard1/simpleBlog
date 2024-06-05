@@ -13,15 +13,16 @@
 </head>
 <body>
   <%= render 'layouts/navbar' %>
-  <div class="container-fluid d-flex flex-column min-vh-100">
+  <div class="pages container-fluid d-flex flex-column min-vh-100">
     <main class="flex-grow-1">
       <%= yield %>
     </main>
-    <%= render 'layouts/footer' %>
   </div>
+  <%= render 'layouts/footer' %>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <%= javascript_include_tag 'mobile_menu', "data-turbo-track": "reload" %>
 </body>
 </html>
