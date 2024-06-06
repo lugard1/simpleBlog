@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
 }
 
 body, html {
@@ -144,7 +144,7 @@ main {
 .aboutContext {
   text-align: justify;
   width: 80%;
-  margin: auto;
+  margin: 0 auto 100px;
   padding-bottom: 30px;
 }
 
