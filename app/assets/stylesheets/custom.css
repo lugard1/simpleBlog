@@ -6,13 +6,15 @@
 }
 
 body, html {
-  margin:0;
-  padding:0;
-  min-height:100vh;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  scroll-behavior: smooth;
+  /* text-align: center */
   /* background-image: url('Image Background Blue Minimal Phone Wallpaper.png'); */
 }
 
-h1, h2, h3, label, p {
+h1, h2, h3, h4, label, p, ol {
   color: #000;
 }
 
@@ -64,12 +66,13 @@ main {
 }
 
 .footer {
-  display: flex;
+  /* display: flex; */
   background-color: rgb(99, 131, 131);
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   text-align: center;
-  position: relative;
-  bottom:0%;
+  position: fixed;
+  left: 0;
+  bottom:0;
   width:100%;
 }
 
@@ -98,6 +101,10 @@ main {
   align-items: center;
 }
 
+.navbar {
+  position: fixed;
+}
+
 /* Base styles for the navbar menu */
 #navbarMenu {
   display: none;
@@ -123,6 +130,22 @@ main {
 
 .navbar-custom {
   position: relative;
+}
+
+.row {
+  margin-bottom: 8rem;
+}
+
+.aboutTitle {
+  text-align: center;
+  padding: 5px;
+}
+
+.aboutContext {
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 /* Styles for smaller screens */
